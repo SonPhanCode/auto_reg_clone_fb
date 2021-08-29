@@ -20,7 +20,8 @@ prefs2 = {"profile.default_content_setting_values.notifications" : 2}
 chrome_options2.add_experimental_option("prefs",prefs2)
 driver2 = webdriver.Chrome(chrome_options=chrome_options2)
 
-for i in range(1):
+so_lan = int(input("Số acc muốn reg: ")
+for i in range(so_lan):
     #brower = webdriver.Chrome('C:/Users/Hoang Nguyen/Desktop/auto/chromedriver.exe')
     brower = driver
     brower1 = driver1
@@ -31,7 +32,7 @@ for i in range(1):
     time.sleep(2)
     brower.find_element_by_name('firstname').send_keys(rd.ten1())
     time.sleep(5)
-    brower2.get('https://raw.githubusercontent.com/hoangks5/auto_reg_clone_fb/main/pass/pass.txt')
+    brower2.get('https://raw.githubusercontent.com/SonPhanCode/auto_reg_clone_fb/main/pass/pass.txt')
     a = brower1.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[1]/form/div[2]/button')
     a.send_keys(Keys.ENTER)
     brower.find_element_by_name('reg_email__').send_keys(Keys.ENTER)
